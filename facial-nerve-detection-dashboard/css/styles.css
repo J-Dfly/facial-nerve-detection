@@ -1,0 +1,23 @@
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
+    .card-shadow {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    .gradient-bg {
+        background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    }
+    .nerve-highlight {
+        transition: all 0.3s ease;
+    }
+    .nerve-highlight:hover {
+        filter: brightness(1.1);
+        transform: translateY(-2px);
+    }
+    .stat-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
