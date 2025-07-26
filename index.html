@@ -127,8 +127,8 @@
                     
                     <div class="relative">
                         <!-- 面部神经预测图像 -->
-                        <div class="aspect-video bg-gray-800/50 rounded-lg overflow-hidden relative nerve-highlight">
-                            <img src="images/1074-800x600.jpg" alt="面部神经预测结果图像" class="w-full h-full object-cover">
+                        <div class="bg-gray-800/50 rounded-lg overflow-hidden relative nerve-highlight inline-block flex items-center justify-center">
+                            <img src="images/1074-800x600.jpg" alt="面部神经预测结果图像" class="max-w-full h-auto object-cover">
                         </div>
                         
                         <!-- 预测信息已隐藏 -->
@@ -206,8 +206,11 @@
                 <!-- 神经类型预测分布 -->
                 <section class="bg-dark-2/50 rounded-xl p-5 card-shadow">
                     <h2 class="text-lg font-semibold mb-4">神经类型预测分布</h2>
-                    <div class="h-64">
-                        <canvas id="nerveTypeChart"></canvas>
+                    <div class="bg-gray-800/50 rounded-lg overflow-hidden relative nerve-highlight inline-block flex items-center justify-center">
+                        <!-- 使用object-contain确保图片完整显示，可能会有留白 -->
+                        <img src="images/屏幕截图 2025-07-26 195604.png" 
+                            alt="面部神经预测统计" 
+                            class="w-full h-full object-contain">
                     </div>
                 </section>
                 
@@ -219,30 +222,30 @@
                         <div>
                             <div class="flex justify-between text-sm mb-1">
                                 <span>面神经检测精度</span>
-                                <span>97.3%</span>
+                                <span>93.3%</span>
                             </div>
                             <div class="w-full bg-gray-700/50 rounded-full h-2">
-                                <div class="bg-primary h-2 rounded-full" style="width: 97.3%"></div>
+                                <div class="bg-primary h-2 rounded-full" style="width: 93.3%"></div>
                             </div>
                         </div>
                         
                         <div>
                             <div class="flex justify-between text-sm mb-1">
                                 <span>三叉神经检测精度</span>
-                                <span>95.8%</span>
+                                <span>89.7%</span>
                             </div>
                             <div class="w-full bg-gray-700/50 rounded-full h-2">
-                                <div class="bg-secondary h-2 rounded-full" style="width: 95.8%"></div>
+                                <div class="bg-secondary h-2 rounded-full" style="width: 89.7%"></div>
                             </div>
                         </div>
                         
                         <div>
                             <div class="flex justify-between text-sm mb-1">
-                                <span>颞神经检测精度</span>
-                                <span>94.2%</span>
+                                <span>腺体检测精度</span>
+                                <span>98.2%</span>
                             </div>
                             <div class="w-full bg-gray-700/50 rounded-full h-2">
-                                <div class="bg-accent h-2 rounded-full" style="width: 94.2%"></div>
+                                <div class="bg-accent h-2 rounded-full" style="width: 98.2%"></div>
                             </div>
                         </div>
                         
@@ -253,6 +256,16 @@
                             </div>
                             <div class="w-full bg-gray-700/50 rounded-full h-2">
                                 <div class="bg-warning h-2 rounded-full" style="width: 92.5%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>肌肉组织检测精度</span>
+                                <span>95.1%</span>
+                            </div>
+                            <div class="w-full bg-gray-700/50 rounded-full h-2">
+                                <div class="bg-warning h-2 rounded-full" style="width: 95.1%"></div>
                             </div>
                         </div>
                     </div>
@@ -267,7 +280,7 @@
                     
                     <div class="space-y-3">
                         <div class="relative rounded-lg overflow-hidden nerve-highlight">
-                            <img src="images/1068-600x400.jpg" alt="面神经预测样本" class="w-full aspect-video object-cover">
+                            <img src="images/1068-600x400.jpg" alt="面神经预测样本" class="max-w-full h-auto object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
                                 <div class="text-white font-medium">面神经预测样本</div>
                                 <div class="text-gray-300 text-xs">置信度: 98.5%</div>
